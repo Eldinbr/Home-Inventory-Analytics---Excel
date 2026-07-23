@@ -1,8 +1,7 @@
 # Home-Inventory-Analytics---Excel
 
-An interactive Goodreads Analytics Dashboard built in Tableau Public. This project analyzes book metadata, publication trends, language distribution, publishers, authors, ratings, and review statistics to uncover insights into global reading patterns and popular literature trends. The dashboard highlights key metrics such as average ratings, publication growth over time, most popular books, dominant publishers, and top language codes.
+An  Excel-based Permission Analytics metric developed using Microsoft Excel. This project analyzes permission records, infrastructure costs, terminal costs, service costs, employee spending, and HR information to generate month-end operational metrics. The workbook demonstrates advanced Excel skills including formulas, lookup functions, pivot tables, aggregations, and business reporting.
 
-Tableau Dashboard Link : [https://public.tableau.com/app/profile/eldin.b.joseph/viz/HRAnalyticsDashboard_17238387531440/HRAnalyticsDashboard](https://public.tableau.com/views/goodreadsDashboard_17240674209860/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## Table of Contents
 
@@ -11,7 +10,7 @@ Tableau Dashboard Link : [https://public.tableau.com/app/profile/eldin.b.joseph/
 - [Technologies Used](#technologies-used)  
 - [Installation](#installation)  
 - [Usage](#usage)  
-- [Analysis & Visualizations](#analysis--visualizations)  
+- [Analysis](#analysis)  
 - [Conclusion](#conclusion)  
 - [Credits](#credits)  
 - [License](#license)  
@@ -20,15 +19,19 @@ Tableau Dashboard Link : [https://public.tableau.com/app/profile/eldin.b.joseph/
 
 ## Overview
 
-- **Motivation:** Finding a clean and structured dataset for books with meaningful metrics such as ratings, reviews, publication details, and author information is often difficult. This project was created to visualize Goodreads book data interactively and provide readers, analysts, and bibliophiles with insights into publishing trends, reader preferences, and book popularity.
-- **Objective:** The main objective of this dashboard is to analyze Goodreads book data including publication trends, language distribution, ratings, publishers, and author statistics to support data-driven insights into reader behavior and literary trends.
-- **Learning Outcomes:** WWhile building this project, I learned:
-Tableau dashboard design and storytelling,
-Data cleaning and preprocessing,
-Creating interactive visualizations,
-Analyzing publication and readership trends,
-Working with Goodreads book metadata,
-Presenting insights through business intelligence dashboards
+- **Motivation:** Organizations often maintain large permission datasets across multiple systems. Producing accurate month-end reports requires cleaning incomplete information, linking HR records, validating permissions, and calculating spending metrics.
+This project demonstrates how Excel can transform raw operational data into meaningful business insights through automation and reporting
+- **Objective:** The primary objective is to generate accurate month-end permission metrics by analysing employee permissions, permission categories, infrastructure costs, terminal costs, service costs, and overall spending using Microsoft Excel.
+- **Learning Outcomes:** While building this project, I learned:
+Advanced Excel formulas, 
+Data cleaning and validation, 
+Lookup functions (VLOOKUP/XLOOKUP), 
+Conditional functions, 
+Pivot Tables, 
+Business reporting, 
+Dashboard creation, 
+Financial summarization, 
+Month-end reporting techniques
 
 ---
 
@@ -36,43 +39,43 @@ Presenting insights through business intelligence dashboards
 
 Dataset Information
 
-- Dataset Type: Goodreads Books Dataset 
-- Records: 11,123 Records
-- Dataset Source: [Goodreads Books Dataset](https://www.kaggle.com/datasets/jealousleopard/goodreadsbooks) 
-- Features Included: Book Title
-Authors
-Publisher
-Publication Date
-Language Code
-Average Rating
-Ratings Count
-Text Reviews Count
-Number of Pages
-- The dataset was cleaned and transformed before visualization:
-Removed duplicate and null records
-Standardized publication dates
-Cleaned language code inconsistencies
-Formatted multiple-author fields
-Aggregated ratings and review metrics
-Prepared publication year trends for dashboard analysis
-- Dataset Background: The dataset was created to provide a clean and analysis-ready collection of books with meaningful numerical metrics. Existing public datasets often lacked proper cleaning, important attributes, or consolidated information. This dataset combines valuable Goodreads metadata into a single structured source suitable for analytics and recommendation systems.
+- Dataset Type: Permission Information Dataset
+- Records: 272 Permission Records
+- Supporting Data: HRID Lookup Table, 
+Month-End Workings, 
+Final Dashboard
+- Features Included: Personnel ID, 
+Employee Name, 
+HRID, 
+Provider, 
+Carrier, 
+Category, 
+Description, 
+Permission Amount, 
+Tax
+- Data Preparation:
+The dataset was processed by-
+Matching missing HRIDs using lookup functions, 
+Validating Personnel IDs, 
+Cleaning inconsistent records, 
+Aggregating permission costs, 
+Calculating total spend, 
+Categorising permissions, 
+Creating month-end summary metrics, 
+Producing pivot table summaries
+- Dataset Background: The dataset represents employee permission information used to generate financial and operational month-end reporting. It combines HR data with permission costs to analyse expenditure across different service categories.
 
-- Important Notes: Data was scraped using the Goodreads API,
-Goodreads API public developer access was retired after December 2020,
-Multiple authors are separated using “/” delimiters,
-Publisher and publication date fields were added in Version 2 of the dataset
 
 ---
 
 <h2>Technologies Used</h2>
 
 <ul>
-  <li><strong>Tools & Platforms:</strong> Tableau Public, Microsoft Excel / CSV Dataset, Git, GitHub</li>
-  <li><strong>Skills Applied:</strong> Data Cleaning, Data Visualization, Dashboard Design, Business Intelligence, Exploratory Data Analysis</li>
+  <li><strong>Tools & Platforms:</strong> Microsoft Excel /  Dataset, Git, GitHub</li>
+  <li><strong>Skills Applied:</strong> Data Cleaning, Data Validation, Lookup Functions, Financial Reporting, Business Intelligence, Pivot Tables</li>
 </ul>
 
 <p>
-  <img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" alt="Tableau">
   <img src="https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" alt="Excel">
   <img src="https://img.shields.io/badge/CSV-FFB000?style=for-the-badge&logo=filezilla&logoColor=white" alt="CSV">
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
@@ -88,10 +91,10 @@ To explore this project locally:
 ```bash
 
 # Clone the repository
-git clone https://github.com/eldinbr/Goodreads-Analytics-Dashboard.git
+git clone https://github.com/eldinbr/Home-Inventory-Analytics---Excel.git
 
 # Navigate into the project directory
-cd Goodreads-Analytics-Dashboard
+cd Home-Inventory-Analytics---Excel
 
 
 
@@ -102,56 +105,67 @@ cd Goodreads-Analytics-Dashboard
 Instructions for using the project:
 
 1. Download or clone the repository 
-2. Open the Tableau workbook file
-3. Interact with filters and charts
-4. Explore publication trends and book insights
+2. Open the Excel workbook.
+3. Open the Instructions tab and familarize the task
+4. Review the Permission Information sheet.
+5. Examine the HRID lookup data.
+6. Explore the Month-End Workings.
+7. Review the Final Metric tab.
 
-The dashboard allows users to:
-Filter books by title,
-Analyze publication trends over time,
-Compare top publishers by total books,
-Explore language distribution of books,
-Identify authors with the highest number of books,
-Examine books with the highest ratings count,
-Analyze reader engagement using reviews and ratings
+The workbook enables users to:
+Calculate total permissions, 
+Analyse employee spending, 
+Compare spending by permission category, 
+Validate HR information, 
+Produce month-end financial summaries, 
+Generate business-ready reports
 
 ---
 
-## Analysis & Visualizations 
+## Analysis
 
 Key Insights
 
-- English (eng) is the dominant language code in the dataset
-- Book publications increased significantly after the 1990s
-- Vintage and Penguin Books are among the top publishers
-- Stephen King and P.G. Wodehouse are among the most represented authors
-- Popular titles such as Twilight and The Hobbit have extremely high ratings counts
-- Ratings and reviews provide strong indicators of reader engagement and popularity
+- A total of 71 permissions were included in the month-end report.
+- Overall permission expenditure reached $6,800.97.
+- Total spend rounded to $6,801 for reporting purposes.
+- Spending is distributed across Infrastructure, Service, and Terminal categories.
+- Employee-level analysis highlights individuals with the highest total permission costs.
+- Pivot table summaries provide quick comparisons across permission categories.
 
-Dashboard Components
+Metric Components
 
-- Books by Publication Date: 
-Visualizes publishing activity trends across decades.
-- Top 10 Language Codes: 
-Highlights the most common languages represented in the dataset.
-- Authors by Total Books: 
-Shows authors with the largest number of published books in the dataset.
-- Publishers by Total Books: 
-Displays publishers contributing the highest number of titles.
-- Titles by Rating Count: 
-Identifies books with the highest reader engagement and popularity.
+- KPI Summary: 
+Displays-
+Total Permissions, 
+Total Spend, 
+Rounded Spend, 
+Infrastructure Spend, 
+Service Spend, 
+Terminal Spend
+- Employee Spend Analysis: 
+Shows total spending by employee to identify the highest operational costs.
+- Category Summary: 
+Breaks down spending into-
+Infrastructure, 
+Service, 
+Terminal
+- HRID Validation: 
+Links personnel records with HR identifiers to ensure complete and accurate reporting.
+
 
 Business Value
 
-- Understand global reading and publication trends
-- Identify highly popular books and authors
-- Explore language diversity in literature
-- Support recommendation system exploration
-- Analyze publisher dominance and reader engagement metrics
+- Monitor operational permission costs
+- Produce accurate month-end reports
+- Track spending across categories
+- Identify high-cost employees
+- Support budgeting and financial planning
 
 Preview
 
-<img width="1384" height="805" alt="Screenshot 2026-05-07 at 6 08 04 PM" src="https://github.com/user-attachments/assets/c588165b-6e3e-45d8-8d43-d2dfed51cc58" />
+
+<img width="589" height="168" alt="Screenshot 2026-07-23 at 3 16 54 PM" src="https://github.com/user-attachments/assets/312545a5-f71b-4784-9483-38396efcf4bd" />
 
 
 
@@ -159,23 +173,24 @@ Preview
 
 ## Conclusion 
 
-The Goodreads Analytics Dashboard provides a comprehensive overview of publication patterns, author contributions, language diversity, and reader engagement trends using Goodreads book data. Through interactive visualizations, users can explore literary insights and discover patterns across thousands of books.
+The Permission Analytics Metric provides a structured and automated approach to month-end reporting using Microsoft Excel. By combining HR information with permission records, the dashboard delivers actionable insights into operational spending, employee activity, and category-level expenditure while demonstrating practical business intelligence techniques within Excel.
 
 Recommendations
 
-- Expand the dashboard with genre-based analysis
-- Add recommendation engine functionality
-- Include sentiment analysis from text reviews
-- Introduce reader demographic insights if available
-- Add trend forecasting for publication growth
+- Automate data imports using Power Query.
+- Add interactive slicers for filtering.
+- Create dynamic charts for spending trends.
+- Include monthly comparisons and variance analysis.
+- Integrate Power Pivot for enhanced data modelling.
 
 ---
 
 ## Credits
 
 - **Collaborators:** Eldin 
-- **Dataset:** [Goodreads Books Dataset](https://www.kaggle.com/datasets/jealousleopard/goodreadsbooks) 
-- **Visualization Tool:** Tableau Public
+- **Dataset:** Home Inventory Exercise
+
+- **Visualization Tool:** Microsoft Excel
 - **Version Control:** GitHub 
 
 ---
