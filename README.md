@@ -2,6 +2,10 @@
 
 An  Excel-based Permission Analytics metric developed using Microsoft Excel. This project analyzes permission records, infrastructure costs, terminal costs, service costs, employee spending, and HR information to generate month-end operational metrics. The workbook demonstrates advanced Excel skills including formulas, lookup functions, pivot tables, aggregations, and business reporting.
 
+Preview
+
+
+<img width="589" height="168" alt="Screenshot 2026-07-23 at 3 16 54 PM" src="https://github.com/user-attachments/assets/312545a5-f71b-4784-9483-38396efcf4bd" />
 
 ## Table of Contents
 
@@ -162,10 +166,7 @@ Business Value
 - Identify high-cost employees
 - Support budgeting and financial planning
 
-Preview
 
-
-<img width="589" height="168" alt="Screenshot 2026-07-23 at 3 16 54 PM" src="https://github.com/user-attachments/assets/312545a5-f71b-4784-9483-38396efcf4bd" />
 
 
 
