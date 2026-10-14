@@ -202,4 +202,4 @@ This project is licensed under the [MIT License](https://choosealicense.com/lice
 
 ---
 
-<p align="center"><strong>Thanks for visiting! 🚀</strong></p>
+
